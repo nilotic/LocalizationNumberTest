@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "TIP"; ObjectID = "1bG-5w-07r"; */
+"1bG-5w-07r.text" = "TIP";
+
+/* Class = "UITextField"; placeholder = "Enter first name"; ObjectID = "68c-WR-UHm"; */
+"68c-WR-UHm.placeholder" = "姓のご入力";
+
+/* Class = "UIBarButtonItem"; title = "Add"; ObjectID = "EnS-Ri-fiY"; */
+"EnS-Ri-fiY.title" = "登録";
+
+/* Class = "UINavigationItem"; title = "Country/region"; ObjectID = "PRb-sb-gxH"; */
+"PRb-sb-gxH.title" = "配送国/地域";
+
+/* Class = "UITextField"; placeholder = "Apartment, suite, unit, or floor (required)"; ObjectID = "StF-56-3gM"; */
+"StF-56-3gM.placeholder" = "マンション・ビル名、部屋番号等（任意）";
+
+/* Class = "UITextField"; placeholder = "Enter state/province/region"; ObjectID = "a1Y-4Z-CD6"; */
+"a1Y-4Z-CD6.placeholder" = "例)千代田区";
+
+/* Class = "UISearchBar"; placeholder = "Street, land-lot, or building name"; ObjectID = "b5G-5M-KBc"; */
+"b5G-5M-KBc.placeholder" = "住所を入力してから郵便番号を選択してください。";
+
+/* Class = "UITextField"; placeholder = "Enter city"; ObjectID = "f9I-ek-Tag"; */
+"f9I-ek-Tag.placeholder" = "例)東京都";
+
+/* Class = "UITextField"; placeholder = "Input shipping country/region"; ObjectID = "gM1-Wa-28R"; */
+"gM1-Wa-28R.placeholder" = "配送国/地域";
+
+/* Class = "UITextField"; placeholder = "Enter street address"; ObjectID = "gmL-k9-Zbw"; */
+"gmL-k9-Zbw.placeholder" = "丁目・番地";
+
+/* Class = "UITextField"; placeholder = "Input zip/postal code"; ObjectID = "h9Q-7O-wT3"; */
+"h9Q-7O-wT3.placeholder" = "郵便番号入力";
+
+/* Class = "UINavigationItem"; title = "Add Shipping Address"; ObjectID = "mVb-Yd-gs5"; */
+"mVb-Yd-gs5.title" = "お届け先の新規登録";
+
+/* Class = "UINavigationItem"; title = "Select Shipping Address"; ObjectID = "p5p-8W-xJL"; */
+"p5p-8W-xJL.title" = "配送先選択";
+
+/* Class = "UITextField"; placeholder = "Input phone number (numbers only)"; ObjectID = "pcZ-mP-IQ4"; */
+"pcZ-mP-IQ4.placeholder" = "電話番号入力(数字)";
+
+/* Class = "UITextField"; placeholder = "Enter last name"; ObjectID = "v1L-n4-sFX"; */
+"v1L-n4-sFX.placeholder" = "名のご入力";

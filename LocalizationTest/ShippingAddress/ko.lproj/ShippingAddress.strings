@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "TIP"; ObjectID = "1bG-5w-07r"; */
+"1bG-5w-07r.text" = "TIP";
+
+/* Class = "UITextField"; placeholder = "Enter first name"; ObjectID = "68c-WR-UHm"; */
+"68c-WR-UHm.placeholder" = "성 입력";
+
+/* Class = "UIBarButtonItem"; title = "Add"; ObjectID = "EnS-Ri-fiY"; */
+"EnS-Ri-fiY.title" = "등록";
+
+/* Class = "UINavigationItem"; title = "Country/region"; ObjectID = "PRb-sb-gxH"; */
+"PRb-sb-gxH.title" = "배송국가/지역 선택";
+
+/* Class = "UITextField"; placeholder = "Apartment, suite, unit, or floor (required)"; ObjectID = "StF-56-3gM"; */
+"StF-56-3gM.placeholder" = "나머지 주소 입력 (필수)";
+
+/* Class = "UITextField"; placeholder = "Enter state/province/region"; ObjectID = "a1Y-4Z-CD6"; */
+"a1Y-4Z-CD6.placeholder" = "주/도/지역 입력";
+
+/* Class = "UISearchBar"; placeholder = "Street, land-lot, or building name"; ObjectID = "b5G-5M-KBc"; */
+"b5G-5M-KBc.placeholder" = "도로명, 지번, 건물명 검색";
+
+/* Class = "UITextField"; placeholder = "Enter city"; ObjectID = "f9I-ek-Tag"; */
+"f9I-ek-Tag.placeholder" = "도시 입력";
+
+/* Class = "UITextField"; placeholder = "Input shipping country/region"; ObjectID = "gM1-Wa-28R"; */
+"gM1-Wa-28R.placeholder" = "배송국가/지역 입력";
+
+/* Class = "UITextField"; placeholder = "Enter street address"; ObjectID = "gmL-k9-Zbw"; */
+"gmL-k9-Zbw.placeholder" = "주소 입력";
+
+/* Class = "UITextField"; placeholder = "Input zip/postal code"; ObjectID = "h9Q-7O-wT3"; */
+"h9Q-7O-wT3.placeholder" = "우편번호 입력";
+
+/* Class = "UINavigationItem"; title = "Add Shipping Address"; ObjectID = "mVb-Yd-gs5"; */
+"mVb-Yd-gs5.title" = "배송지 등록";
+
+/* Class = "UINavigationItem"; title = "Select Shipping Address"; ObjectID = "p5p-8W-xJL"; */
+"p5p-8W-xJL.title" = "배송지 선택";
+
+/* Class = "UITextField"; placeholder = "Input phone number (numbers only)"; ObjectID = "pcZ-mP-IQ4"; */
+"pcZ-mP-IQ4.placeholder" = "전화번호 입력 (숫자)";
+
+/* Class = "UITextField"; placeholder = "Enter last name"; ObjectID = "v1L-n4-sFX"; */
+"v1L-n4-sFX.placeholder" = "이름 입력";

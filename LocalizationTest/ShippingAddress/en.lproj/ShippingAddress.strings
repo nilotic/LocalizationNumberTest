@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "TIP"; ObjectID = "1bG-5w-07r"; */
+"1bG-5w-07r.text" = "TIP";
+
+/* Class = "UITextField"; placeholder = "Enter first name"; ObjectID = "68c-WR-UHm"; */
+"68c-WR-UHm.placeholder" = "Enter first name";
+
+/* Class = "UIBarButtonItem"; title = "Add"; ObjectID = "EnS-Ri-fiY"; */
+"EnS-Ri-fiY.title" = "Add";
+
+/* Class = "UINavigationItem"; title = "Country/region"; ObjectID = "PRb-sb-gxH"; */
+"PRb-sb-gxH.title" = "Country/region";
+
+/* Class = "UITextField"; placeholder = "Apartment, suite, unit, or floor (required)"; ObjectID = "StF-56-3gM"; */
+"StF-56-3gM.placeholder" = "Apartment, suite, unit, or floor (required)";
+
+/* Class = "UITextField"; placeholder = "Enter state/province/region"; ObjectID = "a1Y-4Z-CD6"; */
+"a1Y-4Z-CD6.placeholder" = "Enter state, province, or region";
+
+/* Class = "UISearchBar"; placeholder = "Street, land-lot, or building name"; ObjectID = "b5G-5M-KBc"; */
+"b5G-5M-KBc.placeholder" = "Street, land-lot, or building name";
+
+/* Class = "UITextField"; placeholder = "Enter city"; ObjectID = "f9I-ek-Tag"; */
+"f9I-ek-Tag.placeholder" = "Enter city";
+
+/* Class = "UITextField"; placeholder = "Input shipping country/region"; ObjectID = "gM1-Wa-28R"; */
+"gM1-Wa-28R.placeholder" = "Enter shipping country/region";
+
+/* Class = "UITextField"; placeholder = "Enter street address"; ObjectID = "gmL-k9-Zbw"; */
+"gmL-k9-Zbw.placeholder" = "Enter street address";
+
+/* Class = "UITextField"; placeholder = "Input zip/postal code"; ObjectID = "h9Q-7O-wT3"; */
+"h9Q-7O-wT3.placeholder" = "Enter postal code";
+
+/* Class = "UINavigationItem"; title = "Add Shipping Address"; ObjectID = "mVb-Yd-gs5"; */
+"mVb-Yd-gs5.title" = "Add Shipping Address";
+
+/* Class = "UINavigationItem"; title = "Select Shipping Address"; ObjectID = "p5p-8W-xJL"; */
+"p5p-8W-xJL.title" = "Select Shipping Address";
+
+/* Class = "UITextField"; placeholder = "Input phone number (numbers only)"; ObjectID = "pcZ-mP-IQ4"; */
+"pcZ-mP-IQ4.placeholder" = "Enter phone number";
+
+/* Class = "UITextField"; placeholder = "Enter last name"; ObjectID = "v1L-n4-sFX"; */
+"v1L-n4-sFX.placeholder" = "Enter last name";
