@@ -13,6 +13,11 @@
 		B710EB0023599A6C005283F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B710EAFE23599A6C005283F2 /* Main.storyboard */; };
 		B710EB0223599A6E005283F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B710EB0123599A6E005283F2 /* Assets.xcassets */; };
 		B710EB0523599A6E005283F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B710EB0323599A6E005283F2 /* LaunchScreen.storyboard */; };
+		B7253D09235B289700202FDA /* Currency.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7253D08235B289700202FDA /* Currency.storyboard */; };
+		B7253D0B235B28B800202FDA /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7253D0A235B28B800202FDA /* CurrencyViewController.swift */; };
+		B7253D0D235B28C800202FDA /* CurrencyDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7253D0C235B28C800202FDA /* CurrencyDataManager.swift */; };
+		B7253D0F235B28DA00202FDA /* CurrencyResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7253D0E235B28DA00202FDA /* CurrencyResultsViewController.swift */; };
+		B7253D11235B28E700202FDA /* CurrencyResultsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7253D10235B28E700202FDA /* CurrencyResultsDataManager.swift */; };
 		B7D271142359A0F200DE1FD0 /* ShippingRegionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D270DF2359A0F200DE1FD0 /* ShippingRegionCell.swift */; };
 		B7D271152359A0F200DE1FD0 /* ShippingRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D270E12359A0F200DE1FD0 /* ShippingRegion.swift */; };
 		B7D271162359A0F200DE1FD0 /* SelectedShippingRegionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D270E22359A0F200DE1FD0 /* SelectedShippingRegionDetail.swift */; };
@@ -75,6 +80,11 @@
 		B710EB0123599A6E005283F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B710EB0423599A6E005283F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B710EB0623599A6E005283F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7253D08235B289700202FDA /* Currency.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Currency.storyboard; sourceTree = "<group>"; };
+		B7253D0A235B28B800202FDA /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
+		B7253D0C235B28C800202FDA /* CurrencyDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDataManager.swift; sourceTree = "<group>"; };
+		B7253D0E235B28DA00202FDA /* CurrencyResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResultsViewController.swift; sourceTree = "<group>"; };
+		B7253D10235B28E700202FDA /* CurrencyResultsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResultsDataManager.swift; sourceTree = "<group>"; };
 		B7D270DF2359A0F200DE1FD0 /* ShippingRegionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShippingRegionCell.swift; sourceTree = "<group>"; };
 		B7D270E12359A0F200DE1FD0 /* ShippingRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShippingRegion.swift; sourceTree = "<group>"; };
 		B7D270E22359A0F200DE1FD0 /* SelectedShippingRegionDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedShippingRegionDetail.swift; sourceTree = "<group>"; };
@@ -162,15 +172,28 @@
 			children = (
 				B710EB0323599A6E005283F2 /* LaunchScreen.storyboard */,
 				B710EAF823599A6C005283F2 /* AppDelegate.swift */,
-				B710EAFE23599A6C005283F2 /* Main.storyboard */,
 				B710EAFA23599A6C005283F2 /* SceneDelegate.swift */,
-				B7D270DC2359A0F200DE1FD0 /* ShippingAddress */,
+				B710EAFE23599A6C005283F2 /* Main.storyboard */,
 				B710EAFC23599A6C005283F2 /* ViewController.swift */,
+				B7253D07235B288300202FDA /* Currency */,
+				B7D270DC2359A0F200DE1FD0 /* ShippingAddress */,
 				B710EB0123599A6E005283F2 /* Assets.xcassets */,
 				B7D2713C2359A16E00DE1FD0 /* Util */,
 				B710EB0623599A6E005283F2 /* Info.plist */,
 			);
 			path = LocalizationTest;
+			sourceTree = "<group>";
+		};
+		B7253D07235B288300202FDA /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				B7253D08235B289700202FDA /* Currency.storyboard */,
+				B7253D0A235B28B800202FDA /* CurrencyViewController.swift */,
+				B7253D0C235B28C800202FDA /* CurrencyDataManager.swift */,
+				B7253D0E235B28DA00202FDA /* CurrencyResultsViewController.swift */,
+				B7253D10235B28E700202FDA /* CurrencyResultsDataManager.swift */,
+			);
+			path = Currency;
 			sourceTree = "<group>";
 		};
 		B7D270DC2359A0F200DE1FD0 /* ShippingAddress */ = {
@@ -363,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B710EB0523599A6E005283F2 /* LaunchScreen.storyboard in Resources */,
+				B7253D09235B289700202FDA /* Currency.storyboard in Resources */,
 				B710EB0223599A6E005283F2 /* Assets.xcassets in Resources */,
 				B710EB0023599A6C005283F2 /* Main.storyboard in Resources */,
 				B7D2712C2359A0F200DE1FD0 /* ShippingAddress.strings in Resources */,
@@ -387,6 +411,7 @@
 				B7D271B42359A16E00DE1FD0 /* StringExtension.swift in Sources */,
 				B7D272102359A32300DE1FD0 /* ShippingAddressesResponse.swift in Sources */,
 				B7D271B22359A16E00DE1FD0 /* BundleExtension.swift in Sources */,
+				B7253D0D235B28C800202FDA /* CurrencyDataManager.swift in Sources */,
 				B7D271142359A0F200DE1FD0 /* ShippingRegionCell.swift in Sources */,
 				B7D2720E2359A32300DE1FD0 /* ReturnShippingAddress.swift in Sources */,
 				B7D272052359A2A000DE1FD0 /* DeliveryRegionControl.swift in Sources */,
@@ -402,8 +427,10 @@
 				B710EAFB23599A6C005283F2 /* SceneDelegate.swift in Sources */,
 				B7D2711C2359A0F200DE1FD0 /* ShippingRegionResultsViewController.swift in Sources */,
 				B7D272172359A36900DE1FD0 /* ResponseDetail.swift in Sources */,
+				B7253D11235B28E700202FDA /* CurrencyResultsDataManager.swift in Sources */,
 				B7D271D52359A16E00DE1FD0 /* UITableViewAnimation.swift in Sources */,
 				B7D272112359A32300DE1FD0 /* ShippingAddress.swift in Sources */,
+				B7253D0B235B28B800202FDA /* CurrencyViewController.swift in Sources */,
 				B7D271BB2359A16E00DE1FD0 /* Toast.swift in Sources */,
 				B7D271172359A0F200DE1FD0 /* ShippingRegionResponse.swift in Sources */,
 				B7D271182359A0F200DE1FD0 /* ShippingRegionDetail.swift in Sources */,
@@ -412,6 +439,7 @@
 				B7D271D42359A16E00DE1FD0 /* UICollectionViewAnimation.swift in Sources */,
 				B7D271E72359A16E00DE1FD0 /* LocationManager.swift in Sources */,
 				B7D271AB2359A16E00DE1FD0 /* AppVersionManager.swift in Sources */,
+				B7253D0F235B28DA00202FDA /* CurrencyResultsViewController.swift in Sources */,
 				B7D272022359A20F00DE1FD0 /* LanguageCode.swift in Sources */,
 				B7D2720D2359A32300DE1FD0 /* GuideShippingAddress.swift in Sources */,
 				B7D271B12359A16E00DE1FD0 /* CurrencyExtension.swift in Sources */,

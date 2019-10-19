@@ -1,20 +1,14 @@
 //
-//  ShippingRegionViewController.swift
-//  weply
+//  CurrencyViewController.swift
+//  LocalizationTest
 //
-//  Created by Den Jo on 27/11/2018.
-//  Copyright © 2018 beNX. All rights reserved.
+//  Created by Den Jo on 2019/10/19.
+//  Copyright © 2019 Den Jo. All rights reserved.
 //
 
 import UIKit
 
-// MARK: - Define
-protocol ShippingRegionViewControllerDelegate: class {
-    func didSelect(region: ShippingRegionDetail?)
-    func didSelect(currency: String?)
-}
-
-final class ShippingRegionViewController: UIViewController {
+final class CurrencyViewController: UIViewController {
 
     // MARK: - IBOutlet
     @IBOutlet private var tableView: UITableView!
@@ -29,13 +23,13 @@ final class ShippingRegionViewController: UIViewController {
     
     // MARK: - Value
     // MARK: Public
-    let dataManager = ShippingRegionDataManager()
+    let dataManager = CurrencyDataManager()
     
     weak var delegate: ShippingRegionViewControllerDelegate? = nil
     
     
     // MARK: Private
-    private let resultsViewController = UIStoryboard(name: "ShippingAddress", bundle: nil).instantiateViewController(withIdentifier: "ShippingRegionResultsViewController") as? ShippingRegionResultsViewController
+    private let resultsViewController = UIStoryboard(name: "Currency", bundle: nil).instantiateViewController(withIdentifier: "CurrencyResultsViewController") as? CurrencyResultsViewController
     
     private lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: resultsViewController)
@@ -44,7 +38,7 @@ final class ShippingRegionViewController: UIViewController {
         searchController.searchResultsUpdater  = self
         searchController.delegate              = self
         searchController.searchBar.delegate    = self
-        searchController.searchBar.placeholder = NSLocalizedString("Search country and region", comment: "")
+        searchController.searchBar.placeholder = NSLocalizedString("Search Currency", comment: "")
         UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).title = NSLocalizedString("Cancel", comment: "")
 
         
@@ -239,7 +233,7 @@ final class ShippingRegionViewController: UIViewController {
             
         }) { finished in
             DispatchQueue.main.async {
-                self.dismiss(animated: true) { self.delegate?.didSelect(region: self.dataManager.selectedShippingRegionDetail) }
+                self.dismiss(animated: true) { self.delegate?.didSelect(currency: self.dataManager.selectedShippingRegionDetail?.countryCode) }
             }
         }
     }
@@ -258,7 +252,7 @@ final class ShippingRegionViewController: UIViewController {
 
 // MARK: - UITableView
 // MARK: DataSource
-extension ShippingRegionViewController: UITableViewDataSource {
+extension CurrencyViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return dataManager.regions.count
@@ -281,7 +275,7 @@ extension ShippingRegionViewController: UITableViewDataSource {
 }
 
 // MARK: Delegate
-extension ShippingRegionViewController: UITableViewDelegate {
+extension CurrencyViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 46.0
@@ -351,7 +345,7 @@ extension ShippingRegionViewController: UITableViewDelegate {
 
 
 // MARK: - UISearchResultsUpdating
-extension ShippingRegionViewController: UISearchResultsUpdating {
+extension CurrencyViewController: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
         resultsViewController?.dataManager.keyword = searchController.searchBar.text
@@ -359,7 +353,7 @@ extension ShippingRegionViewController: UISearchResultsUpdating {
 }
 
 // MARK: - UISearchControllerDelegate
-extension ShippingRegionViewController: UISearchControllerDelegate {
+extension CurrencyViewController: UISearchControllerDelegate {
     
     func willPresentSearchController(_ searchController: UISearchController) {
         resultsViewController?.tableViewBottomConstraint.constant = keyboardHeight
@@ -382,7 +376,7 @@ extension ShippingRegionViewController: UISearchControllerDelegate {
 
 
 // MARK: - UISearchBarDelegate
-extension ShippingRegionViewController: UISearchBarDelegate {
+extension CurrencyViewController: UISearchBarDelegate {
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         self.resultsViewController?.view.layoutIfNeeded()
@@ -394,20 +388,20 @@ extension ShippingRegionViewController: UISearchBarDelegate {
     }
 }
 
-extension ShippingRegionViewController: ShippingRegionResultsViewControllerDelegate {
+extension CurrencyViewController: ShippingRegionResultsViewControllerDelegate {
     
     func didSelect(region: ShippingRegionDetail?) {
         guard dataManager.update(selected: region) == true else { return }
         
         DispatchQueue.main.async {
-            self.navigationController?.dismiss(animated: true) { self.delegate?.didSelect(region: self.dataManager.selectedShippingRegionDetail) }
+            self.navigationController?.dismiss(animated: true) { self.delegate?.didSelect(currency: self.dataManager.selectedShippingRegionDetail?.countryCode) }
         }
     }
 }
 
 
 // MARK: - DeliveryRegionControl Delegate
-extension ShippingRegionViewController: DeliveryRegionControlDelegate {
+extension CurrencyViewController: DeliveryRegionControlDelegate {
     
     func didSelect(index: UInt) {
         guard index < tableView.numberOfSections else { return }

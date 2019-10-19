@@ -1,20 +1,15 @@
 //
-//  ShippingRegionDataManager.swift
-//  weply
+//  CurrencyDataManager.swift
+//  LocalizationTest
 //
-//  Created by Den Jo on 27/11/2018.
-//  Copyright © 2018 beNX. All rights reserved.
+//  Created by Den Jo on 2019/10/19.
+//  Copyright © 2019 Den Jo. All rights reserved.
 //
 
 import UIKit
 
 // MARK: - Define
-struct ShippingRegionNotificationName {
-    static let regions = Notification.Name("ShippingRegionNotification")
-    static let update  = Notification.Name("ShippingRegionUpdateNotification")
-}
-
-final class ShippingRegionDataManager: NSObject {
+final class CurrencyDataManager: NSObject {
 
     // MARK: - Value
     // MARK: Public
@@ -40,9 +35,10 @@ final class ShippingRegionDataManager: NSObject {
         let selectedCountryCode = self.selectedCountryCode ?? ""
         
         // Extract countries
-        for code in NSLocale.isoLanguageCodes as [String] {
-            let id = NSLocale.localeIdentifier(fromComponents: [NSLocale.Key.languageCode.rawValue: code])
-            guard let country = NSLocale(localeIdentifier: "en").displayName(forKey: NSLocale.Key.identifier, value: id) else { continue }
+        for code in NSLocale.isoCurrencyCodes as [String] {
+            let id = NSLocale.localeIdentifier(fromComponents: [NSLocale.Key.currencyCode.rawValue: code])
+            guard var country = Locale(identifier: code).localizedString(forCurrencyCode: code) else { continue }
+            country = "\(code) - \(country)"
             
             var localizedString: String? {
                 switch language.code {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -13,18 +13,18 @@
             <objects>
                 <viewController storyboardIdentifier="ShippingRegionViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hbG-bJ-oKe" customClass="ShippingRegionViewController" customModule="LocalizationTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jvr-FG-L19">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="2u4-zE-GGL">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ShippingRegionCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ShippingRegionCell" rowHeight="91" id="Qhh-4V-Nb2" customClass="ShippingRegionCell" customModule="LocalizationTest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="91"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="91"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qhh-4V-Nb2" id="qKB-Qp-kLq">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="91"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonRadioUnchecked" highlightedImage="buttonRadioChecked" translatesAutoresizingMaskIntoConstraints="NO" id="7en-Q7-ESC">
@@ -35,7 +35,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifs-04-9eH">
-                                                    <rect key="frame" x="56" y="19" width="267.5" height="51"/>
+                                                    <rect key="frame" x="56" y="19" width="306.5" height="51"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="미국 (United States)">
                                                             <attributes>
@@ -48,7 +48,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8b-sK-Fkr">
-                                                    <rect key="frame" x="323.5" y="19" width="17.5" height="51"/>
+                                                    <rect key="frame" x="362.5" y="19" width="17.5" height="51"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="+1">
                                                             <attributes>
@@ -86,7 +86,7 @@
                                 </connections>
                             </tableView>
                             <view clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="rFy-aq-fMJ" customClass="StyleView" customModule="LocalizationTest" customModuleProvider="target">
-                                <rect key="frame" x="156.5" y="280.5" width="62" height="62"/>
+                                <rect key="frame" x="176" y="373" width="62" height="62"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Om1-aI-R5f">
                                         <rect key="frame" x="31" y="31" width="0.0" height="0.0"/>
@@ -109,7 +109,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="bjN-Cp-Hlq" customClass="DeliveryRegionControl" customModule="LocalizationTest" customModuleProvider="target">
-                                <rect key="frame" x="349" y="28" width="26" height="20"/>
+                                <rect key="frame" x="388" y="28" width="26" height="20"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="26" id="7NF-Ia-fEs"/>
@@ -117,7 +117,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wrY-5L-mIO" customClass="StyleButton" customModule="LocalizationTest" customModuleProvider="target">
-                                <rect key="frame" x="20" y="553" width="335" height="50"/>
+                                <rect key="frame" x="20" y="704" width="374" height="50"/>
                                 <color key="backgroundColor" name="brandBlueSolid"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="amk-W6-XMW"/>
@@ -152,7 +152,7 @@
                                 </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dwa-3W-auq">
-                                <rect key="frame" x="177.5" y="301.5" width="20" height="20"/>
+                                <rect key="frame" x="197" y="394" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -201,18 +201,18 @@
             <objects>
                 <viewController storyboardIdentifier="ShippingRegionResultsViewController" extendedLayoutIncludesOpaqueBars="YES" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FQC-KC-1dB" customClass="ShippingRegionResultsViewController" customModule="LocalizationTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AYA-Vo-JGr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="oAI-fr-hru">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ShippingRegionCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ShippingRegionCell" rowHeight="91" id="N9J-Ta-Kfn" customClass="ShippingRegionCell" customModule="LocalizationTest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="91"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="91"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N9J-Ta-Kfn" id="hgw-Ll-Ouh">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="91"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonRadioUnchecked" highlightedImage="buttonRadioChecked" translatesAutoresizingMaskIntoConstraints="NO" id="GKf-zA-2LO">
@@ -223,7 +223,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f52-lx-aYo">
-                                                    <rect key="frame" x="56" y="19" width="267.5" height="51"/>
+                                                    <rect key="frame" x="56" y="19" width="306.5" height="51"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="미국">
                                                             <attributes>
@@ -244,7 +244,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8N-3O-TmE">
-                                                    <rect key="frame" x="323.5" y="19" width="17.5" height="51"/>
+                                                    <rect key="frame" x="362.5" y="19" width="17.5" height="51"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="+1">
                                                             <attributes>
@@ -282,7 +282,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wEO-En-vQE" customClass="StyleButton" customModule="LocalizationTest" customModuleProvider="target">
-                                <rect key="frame" x="20" y="597" width="335" height="50"/>
+                                <rect key="frame" x="20" y="792" width="374" height="50"/>
                                 <color key="backgroundColor" name="brandBlueSolid"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="eML-sI-VhW"/>
@@ -348,7 +348,7 @@
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="i5I-SF-YmD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -366,19 +366,19 @@
         <image name="buttonRadioUnchecked" width="22" height="22"/>
         <image name="navibarIconBackClose" width="28" height="28"/>
         <namedColor name="brandBlueSolid">
-            <color red="0.070588235294117646" green="0.396078431372549" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.071000002324581146" green="0.39599999785423279" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="grayscaleDark">
-            <color red="0.47450980392156861" green="0.48627450980392156" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.47499999403953552" green="0.48600000143051147" blue="0.51399999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="grayscaleExtraDark">
-            <color red="0.18823529411764706" green="0.19607843137254902" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18799999356269836" green="0.19599999487400055" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="uiBlackSolid">
             <color red="0.10980392156862745" green="0.11372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="uiDimSolid">
-            <color red="0.89411764705882357" green="0.90196078431372551" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.89399999380111694" green="0.90200001001358032" blue="0.9179999828338623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
